@@ -19,13 +19,17 @@
 
 #ifdef FLYWOOF411_V2
 #define TARGET_BOARD_IDENTIFIER "FW42"
-#define USBD_PRODUCT_STRING     "FLYWOOF411V2"
+#define USBD_PRODUCT_STRING     "FLYWOOF411V2-CUSTOM"
 #else
 #define TARGET_BOARD_IDENTIFIER "FW41"
 #define USBD_PRODUCT_STRING     "FLYWOOF411"
 #endif
 
-#define LED0                    PC13
+// #define LED0                    PC13
+// *************** PINIO ***************************
+#define USE_PINIO
+#define USE_PINIOBOX
+#define PINIO1_PIN                  PC13 // Camera switcher
 
 #define BEEPER                  PC14
 #define BEEPER_INVERTED

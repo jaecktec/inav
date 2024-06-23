@@ -19,6 +19,7 @@
 #include <platform.h>
 #include "drivers/io.h"
 #include "drivers/dma.h"
+#include "drivers/pinio.h"
 #include "drivers/timer.h"
 #include "drivers/bus.h"
 #include "drivers/pwm_mapping.h"
